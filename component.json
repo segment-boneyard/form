@@ -2,7 +2,7 @@
   "name": "form",
   "repo": "segmentio/form",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Dynamically generate a form by adding fields from a schema.",
   "keywords": ["form", "generate", "ui", "checkbox", "input", "textarea", "radio"],
   "dependencies": {
