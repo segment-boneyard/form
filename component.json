@@ -6,7 +6,6 @@
   "description": "Dynamically generate a form by adding fields from a schema.",
   "keywords": ["form", "generate", "ui", "checkbox", "input", "textarea", "radio"],
   "dependencies": {
-    "component/classes": "*",
     "component/domify": "*",
     "component/each": "*",
     "component/event": "*",
