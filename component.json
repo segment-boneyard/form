@@ -23,6 +23,7 @@
     "lib/fields/default/index.js"
   ],
   "templates": [
+    "lib/index.html",
     "lib/fields/default/index.html"
   ],
   "main": "lib/index.js"
