@@ -1,0 +1,30 @@
+{
+  "name": "form",
+  "repo": "segmentio/form",
+  "license": "MIT",
+  "version": "0.0.2",
+  "description": "Dynamically generate a form by adding fields from a schema.",
+  "keywords": ["form", "generate", "ui", "checkbox", "input", "textarea", "radio"],
+  "dependencies": {
+    "component/classes": "*",
+    "component/domify": "*",
+    "component/each": "*",
+    "component/event": "*",
+    "ianstormtaylor/reactive": "*",
+    "component/value": "*",
+    "ianstormtaylor/classes": "*",
+    "yields/prevent": "*"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "scripts": [
+    "lib/index.js",
+    "lib/fields/index.js",
+    "lib/fields/default/index.js"
+  ],
+  "templates": [
+    "lib/fields/default/index.html"
+  ],
+  "main": "lib/index.js"
+}
