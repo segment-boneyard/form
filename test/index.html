@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Form Test</form>
+  <title>Form Test</title>
   <link rel="stylesheet" href="mocha.css" />
 </head>
 <body>
@@ -10,5 +10,25 @@
   <script src="../build/build.js"></script>
   <script src="form.js"></script>
   <script>mocha.run();</script>
+  <script>
+    (function () {
+      var Form = require('form');
+      var form = new Form({
+        name: 'Fred'
+      });
+      form.field({
+        type: 'text',
+        name: 'name',
+        label: 'Label',
+        legend: 'Legend'
+      });
+      form.field({
+        type: 'submit',
+        name: 'submit',
+        label: 'Do it'
+      });
+      document.body.appendChild(form.el);
+    }());
+  </script>
 </body>
 </html>

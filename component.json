@@ -10,6 +10,7 @@
     "component/each": "*",
     "component/event": "*",
     "ianstormtaylor/reactive": "*",
+    "component/type": "*",
     "component/value": "*",
     "ianstormtaylor/classes": "*",
     "yields/prevent": "*"
@@ -20,11 +21,13 @@
   "scripts": [
     "lib/index.js",
     "lib/fields/index.js",
-    "lib/fields/default/index.js"
+    "lib/fields/default/index.js",
+    "lib/fields/submit/index.js"
   ],
   "templates": [
     "lib/index.html",
-    "lib/fields/default/index.html"
+    "lib/fields/default/index.html",
+    "lib/fields/submit/index.html"
   ],
   "main": "lib/index.js"
 }

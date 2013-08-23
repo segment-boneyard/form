@@ -1,4 +1,4 @@
-build: components lib
+build: components lib/index.js
 	@component build --dev
 
 components: component.json

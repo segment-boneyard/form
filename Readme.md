@@ -16,16 +16,20 @@ var form = new Form();
 form.field({
   type: 'text',
   name: 'name',
-  default: '',
   label: 'Enter your name...'
 });
 
 form.field({
   type: 'password',
   name: 'password',
-  default: '',
   label: 'Choose a password...',
   legend: 'Must be at least 8 characters.'
+});
+
+form.field({
+  type: 'submit',
+  name: 'submit',
+  label: 'Sign Up'
 });
 
 document.body.appendChild(form.el);
@@ -65,8 +69,10 @@ form.field({
 
 ```html
 <form class="form">
-  { Your fields get appended here... }
-  { Your button goes here... }
+  <!-- Your fields get appended here, like: -->
+  <fieldset class="form-field">
+    ...
+  </fieldset>
 </form>
 ```
 
@@ -74,14 +80,14 @@ form.field({
   Add a new field to the form with the given `schema`. Fields are keyed by their `type` property in the `Form.fields` dictionary.
 
     {
-      type: 'String',
-      default: 'Mixed',
-      label: 'String', (optional)
-      legend: 'String' (optional)
+      name    : 'String'
+      type    : 'String' (optional)
+      label   : 'String' (optional)
+      legend  : 'String' (optional)
+      default : 'Mixed'  (optional)
     }
 
-### #button(el || string)
-  Set the form's submit button. Either pass your own submit element, or just a string of text for convenience.
+  You can also pass any other properties in the schema and handle them however you want with your custom field types. For example, a `"range"` field would probably take a `min` and `max`.
 
 ### #prevent()
   Prevent the form from submitting normally.
@@ -91,6 +97,14 @@ form.field({
 
 ### #Classes
   [`ianstormtaylor/classes`](https://github.com/ianstormtaylor/classes) is mixed in.
+
+## Field Types
+
+### `"default"`
+  The default field, just a simple text input. If you don't specify a `type` property in your field schema, it'll use the default field.
+
+### `"submit"`
+  A generic submit field. The `label` will be used as the button's text.
 
 ## License
 
