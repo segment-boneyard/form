@@ -1,3 +1,9 @@
+
+0.2.0 / 2014-04-25 
+==================
+
+ * add emitter
+
 0.1.1 - October 3, 2013
 -----------------------
 * fix bug in setting a falsey value
