@@ -12,6 +12,7 @@
     "ianstormtaylor/reactive": "*",
     "component/type": "*",
     "component/value": "*",
+    "component/emitter": "*",
     "ianstormtaylor/classes": "*",
     "yields/prevent": "*"
   },
